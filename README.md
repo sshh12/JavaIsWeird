@@ -1,0 +1,2 @@
+# JavaIsWierd
+Java.
