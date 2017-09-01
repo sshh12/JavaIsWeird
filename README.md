@@ -1,6 +1,6 @@
-# Java is wierd.
+# Java is weird.
 
-A collection of trival java stuff.
+A collection of trivial java stuff.
 
 ### Categories
 
@@ -9,5 +9,7 @@ A collection of trival java stuff.
 * [Strings](https://github.com/sshh12/JavaIsWierd/blob/master/examples/strings.md)
 
 * [Lists](https://github.com/sshh12/JavaIsWierd/blob/master/examples/lists.md)
+
+* [BigInteger](https://github.com/sshh12/JavaIsWierd/blob/master/examples/biginteger.md)
 
 * [Statics](https://github.com/sshh12/JavaIsWierd/blob/master/examples/statics.md)

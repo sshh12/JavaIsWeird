@@ -1,4 +1,4 @@
-# Java is wierd.
+# Java is weird.
 
 ## Primitives
 
