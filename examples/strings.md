@@ -24,4 +24,16 @@ a == getString();             // true
 
 ```java
 "abcdefg".compareTo("abc"); // 4
+"abc".compareTo("abcdefg"); // -4
+```
+
+#### Substring
+
+```java
+"".substring(0);       // ""
+"".substring(0, 0);    // ""
+"".substring(1);       // (StringIndexOutOfBoundsException)
+"".substring(0, 1);    // (StringIndexOutOfBoundsException)
+"abc".substring(3);    // ""
+"abc".substring(3, 4); // (StringIndexOutOfBoundsException)
 ```

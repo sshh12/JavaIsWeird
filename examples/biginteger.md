@@ -24,11 +24,15 @@ BigInteger.TEN;          // 10
 #### ProbablePrime
 
 ```java
-BigInteger a = new BigInteger("2");
+BigInteger a = new BigInteger("1");
 a.isProbablePrime(0);               // true (certainty <= 0 always is true)
-a.isProbablePrime(100);             // true (2 is the only prime w/100% certainty)
+a.isProbablePrime(1);               // false
 
-BigInteger b = new BigInteger("4");
+BigInteger b = new BigInteger("2");
 b.isProbablePrime(0);               // true
-b.isProbablePrime(100);             // false
+b.isProbablePrime(100);             // true
+
+BigInteger c = new BigInteger("4");
+c.isProbablePrime(0);               // true
+c.isProbablePrime(100);             // false
 ```

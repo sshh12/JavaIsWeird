@@ -12,7 +12,7 @@ short  d = 1; d /= 0; // (ArithmeticException)
 byte   e = 1; e /= 0; // (ArithmeticException)
 ```
 
-#### Upcasting
+#### Casting
 
 ```java
 byte a = Byte.MAX_VALUE;   // 127
@@ -20,6 +20,9 @@ a + 3;                     // 130
 
 int b = Integer.MAX_VALUE; // 2147483647
 b + 1.;                    // 2.147483648E9
+
+int c = 1.5;               // (Compile Error)
+int d = 0; d += 1.5;       // 1
 ```
 
 #### Valid shifting
@@ -41,4 +44,18 @@ a / 2;             // Infinity
 a - 5;             // Infinity
 a / a;             // NaN
 a - a;             // NaN
+```
+
+#### Lack of precision
+
+```java
+double a = 1e30;
+double b = a + 10;
+a == b; // true
+```
+
+#### Zero
+
+```java
+-0 == 0; // true
 ```

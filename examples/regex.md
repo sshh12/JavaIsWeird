@@ -5,12 +5,17 @@
 #### Split
 
 ```java
-"aaaa".split("a");       // []
-"abababa".split("a");     // [, b, b, b]
-"abababa".split("a", -1); // [, b, b, b, ]
+"aaaa".split("a");          // []
+"aaaa".split(".");          // []
+
+"abababa".split("a");       // [, b, b, b]
+"abababa".split("a", -1);   // [, b, b, b, ]
+
+"ababaaaaa".split("a");     // [, b, b]
+"ababaaaaa".split("a", -1); // [, b, b, , , , , ]
 ```
 
-#### Replace
+#### Replace Syntax
 
 ```java
 "a-b--c".replaceAll("[a-z]", "~$0~");                   // ~a~-~b~--~c~
