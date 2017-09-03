@@ -59,3 +59,46 @@ a == b; // true
 ```java
 -0 == 0; // true
 ```
+
+#### Objects
+
+```java
+5 == 5;                           // true
+new Integer(5) == new Integer(5); // false
+
+Integer a = 5;
+Integer b = 5;
+a == b;                           // true
+
+Integer a = 128;
+Integer b = 128;
+a <= b;                           // true
+a >= b;                           // true
+a == b;                           // false
+```
+
+#### Ternary
+
+```java
+int    a = true ? 1 : 1.0;    // (Compile Error)
+Object b = true ? 1 : 2.5;    // 1.0
+
+Integer c = null;
+double  d = 2.0;
+Object  e = true ? null : d;  // null
+Object  f = true ?    c : d;  // (NullPointerException)
+```
+
+#### Literals
+
+```java
+int a = 05;     // 5
+int b = 010;    // 8
+int c = 08;     // (Compile Error)
+
+int d =  x10;   // (Compile Error)
+int e = 0x10;   // 16
+
+int    f = 1e2; // (Compile Error)
+double g = 1e2; // 100.0
+```
