@@ -10,7 +10,9 @@ A collection of trivial java stuff.
 
 * [Strings](https://github.com/sshh12/JavaIsWierd/blob/master/examples/strings.md)
 
-* [Lists](https://github.com/sshh12/JavaIsWierd/blob/master/examples/lists.md)
+* [Errors](https://github.com/sshh12/JavaIsWierd/blob/master/examples/errors.md)
+
+* [Lists and Arrays](https://github.com/sshh12/JavaIsWierd/blob/master/examples/listsarrays.md)
 
 * [Loops](https://github.com/sshh12/JavaIsWierd/blob/master/examples/loops.md)
 
@@ -19,3 +21,5 @@ A collection of trivial java stuff.
 * [Regex](https://github.com/sshh12/JavaIsWierd/blob/master/examples/regex.md)
 
 * [Statics](https://github.com/sshh12/JavaIsWierd/blob/master/examples/statics.md)
+
+* [Keywords](https://github.com/sshh12/JavaIsWierd/blob/master/examples/keywords.md)

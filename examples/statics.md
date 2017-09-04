@@ -6,6 +6,6 @@
 
 ```java
 Math[] maths = new Math[10];
-maths[0]; // null
-maths[0].floor(1.5); // 1
+maths[0];                    // null
+maths[0].floor(1.5);         // 1
 ```

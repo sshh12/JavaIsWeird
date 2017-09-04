@@ -24,11 +24,3 @@ int b = (byte)(short)(int) + 1;       // 1
 int c = (byte)(short)(int) * 1;       // (Compile Error)
 int d = (int)(double)(int) + 1.5;     // 1
 ```
-
-#### Arrays
-
-```java
-int[][] a = {{}}; // [[]]
-int[] b[] = {{}}; // [[]]
-int c[][] = {{}}; // [[]]
-```

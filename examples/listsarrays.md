@@ -1,6 +1,6 @@
 # Java is weird.
 
-## Lists
+## Lists and Arrays
 
 #### asList
 
@@ -30,4 +30,12 @@ list.remove(new Integer(1)); // true, [3]
 
 list.remove(10);             // (IndexOutOfBoundsException)
 list.remove(new Integer(10)) // False
+```
+
+#### Declaration
+
+```java
+int[][] a = {{}}; // [[]] (Valid)
+int[] b[] = {{}}; // [[]] (Valid)
+int c[][] = {{}}; // [[]] (Valid)
 ```
