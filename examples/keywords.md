@@ -5,7 +5,7 @@
 #### All of them
 
 ```java
-(a instanceOf b);
+if(a instanceOf b) {};
 
 boolean a;
 byte b;
@@ -45,14 +45,14 @@ public c();
 
 switch(){};
 case a: b();
-default c(){};
+default c() {};
 
 break;
 continue;
 
 do {};
 for(){};
-while(){};
+while() {};
 
 if(){};
 else {};

@@ -5,6 +5,8 @@
 #### Equals (==)
 
 ```java
+"abc" == "abc";               // true
+
 String a = "abc";
 String b = "abc";
 String c = new String("abc");
@@ -18,6 +20,14 @@ String getString(){
 }
 
 a == getString();             // true
+
+a += "."; b += ".";
+a == b;                       // false
+
+"abc" + "." == "abc" + ".";   // true
+String e = "abc" + ".";
+String f = "abc.";
+e == f;                       // true
 ```
 
 #### Compare similar strings
@@ -35,5 +45,6 @@ a == getString();             // true
 "".substring(1);       // (StringIndexOutOfBoundsException)
 "".substring(0, 1);    // (StringIndexOutOfBoundsException)
 "abc".substring(3);    // ""
+"abc".substring(3, 3); // ""
 "abc".substring(3, 4); // (StringIndexOutOfBoundsException)
 ```
