@@ -64,17 +64,22 @@ a == b; // true
 
 ```java
 5 == 5;                           // true
+new Integer(5) == 5;              // true
 new Integer(5) == new Integer(5); // false
 
 Integer a = 5;
 Integer b = 5;
+Integer c = new Integer(5);
+Integer d = new Integer(5);
 a == b;                           // true
+c == d;                           // false
+c == a;                           // false
 
-Integer a = 128;
-Integer b = 128;
-a <= b;                           // true
-a >= b;                           // true
-a == b;                           // false
+Integer e = 128;
+Integer f = 128;
+e <= f;                           // true
+e >= f;                           // true
+e == f;                           // false
 ```
 
 #### Ternary

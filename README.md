@@ -18,6 +18,8 @@ A collection of trivial java stuff.
 
 * [BigInteger](https://github.com/sshh12/JavaIsWierd/blob/master/examples/biginteger.md)
 
+* [Classes](https://github.com/sshh12/JavaIsWierd/blob/master/examples/classes.md)
+
 * [Regex](https://github.com/sshh12/JavaIsWierd/blob/master/examples/regex.md)
 
 * [Statics](https://github.com/sshh12/JavaIsWierd/blob/master/examples/statics.md)

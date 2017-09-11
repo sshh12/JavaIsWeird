@@ -36,7 +36,7 @@ try {
 }                              // ade
 ```
 
-#### Return finally
+#### Finally return
 
 ```java
 boolean getValue(){

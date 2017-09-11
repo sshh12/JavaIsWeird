@@ -21,11 +21,9 @@ for(int i = 0; i < 10; i++);   // a (x1)
     System.out.println('a');
 ```
 
-#### Goto and labels
+#### Labels
 
 ```java
-int goto = 1;                       // (Compile Error)
-
 label: {                            // (Valid)
     if (condition) {
         break label;

@@ -67,6 +67,6 @@ return;
 super();
 this; this();
 
-goto a;
-const b;
+goto a;   // (Unused)
+const b;  // (Unused)
 ```
