@@ -28,11 +28,11 @@ default b();
 final c();
 native d();
 static e();
-strictfp f();
-synchronized g();
+synchronized f();
+void g();
 transient int h;
-void i();
-volatile j();
+volatile int i;
+strictfp class j {};
 
 new a();
 
@@ -51,7 +51,7 @@ break;
 continue;
 
 do {};
-for(){};
+for() {};
 while() {};
 
 if(){};
@@ -64,7 +64,7 @@ throw new a();
 
 return;
 
-super();
+super; super();
 this; this();
 
 goto a;   // (Unused)
