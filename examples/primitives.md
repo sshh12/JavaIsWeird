@@ -25,7 +25,7 @@ int c = 1.5;               // (Compile Error)
 int d = 0; d += 1.5;       // 1
 ```
 
-#### Valid shifting
+#### Shifting
 
 ```java
 double a = 1; a <<= 2; // (Compile Error)
@@ -33,6 +33,11 @@ float  b = 1; b <<= 2; // (Compile Error)
 int    c = 1; c <<= 2; // 4
 short  d = 1; d <<= 2; // 4
 byte   e = 1; e <<= 2; // 4
+
+int  f = 5; f <<= 32;   // 5
+int  g = 5; g <<= 64;   // 5
+byte h = 5; h <<= 8;    // 0
+byte i = 5; i <<= 32;   // 5
 ```
 
 #### Infinity
