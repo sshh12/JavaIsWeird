@@ -14,7 +14,7 @@ A collection of trivial java stuff.
 
 * [Lists and Arrays](https://github.com/sshh12/JavaIsWierd/blob/master/examples/listsarrays.md)
 
-* [Loops](https://github.com/sshh12/JavaIsWierd/blob/master/examples/loops.md)
+* [Loops and Conditionals](https://github.com/sshh12/JavaIsWierd/blob/master/examples/loopscond.md)
 
 * [BigInteger](https://github.com/sshh12/JavaIsWierd/blob/master/examples/biginteger.md)
 

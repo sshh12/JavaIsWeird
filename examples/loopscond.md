@@ -1,6 +1,6 @@
 # Java is weird.
 
-## Loops
+## Loops and Conditionals
 
 #### Syntax
 
@@ -34,4 +34,20 @@ label: do {                         // (Valid)
     if (condition) continue label;
     break label;
 } while(true);
+```
+
+#### Short Circuit
+
+```java
+boolean doStuff(){
+
+  System.out.println("1");
+  return true;
+
+}
+
+if(false || doStuff()){}   // 1
+if(true  || doStuff()){}   // (Nothing)
+if(false && doStuff()){}   // (Nothing)
+if(true  && doStuff()){}   // 1
 ```

@@ -40,6 +40,16 @@ byte h = 5; h <<= 8;    // 0
 byte i = 5; i <<= 32;   // 5
 ```
 
+#### Bitwise Complement Operator
+
+```java
+double a = 7; ~a; // (Compile Error)
+float  b = 7; ~b; // (Compile Error)
+int    c = 7; ~c; // -8
+short  d = 7; ~d; // -8
+byte   e = 7; ~e; // -8
+```
+
 #### Infinity
 
 ```java
@@ -111,4 +121,20 @@ int e = 0x10;   // 16
 
 int    f = 1e2; // (Compile Error)
 double g = 1e2; // 100.0
+```
+
+#### Increment/Decrement
+
+```java
+int a = 3;
+a++;          // 3
+a;            // 4
+
+int b = 3;
+++b;          // 4
+b;            // 4
+
+int c = 3;
+c += c += 1;
+c;            // 7
 ```
