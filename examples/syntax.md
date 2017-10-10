@@ -5,15 +5,16 @@
 #### Variable names
 
 ```java
-int _ = 1; // 1
-int $ = 2; // 2
-int £ = 3; // 3
-int € = 4; // 4
-int - = 5; // (Compile Error)
-int # = 6; // (Compile Error)
-int @ = 7; // (Compile Error)
-int * = 8; // (Compile Error)
-int 1 = 9; // (Compile Error)
+int _ = 1;        // 1
+int $ = 2;        // 2
+int £ = 3;        // 3
+int € = 4;        // 4
+int - = 5;        // (Compile Error)
+int # = 6;        // (Compile Error)
+int @ = 7;        // (Compile Error)
+int * = 8;        // (Compile Error)
+int 1 = 9;        // (Compile Error)
+int finally = 10; // (Compile Error)
 ```
 
 #### Chain casting
@@ -23,4 +24,148 @@ int a = (byte) + (short) - (int) + 1; // -1
 int b = (byte)(short)(int) + 1;       // 1
 int c = (byte)(short)(int) * 1;       // (Compile Error)
 int d = (int)(double)(int) + 1.5;     // 1
+```
+
+#### Combining
+
+```java
+1 + 2 + "3" + 4 + 5; // 3345
+
+1 + "2" == "3" + 4;  // false
+1 + "2" == "1" + 2;  // true
+```
+
+#### Keywords
+
+```java
+if(a instanceOf b) {};
+
+boolean a;
+byte b;
+char c;
+double d;
+float e;
+int f;
+long g;
+short h;
+
+class a {}
+enum b {}
+interface c {}
+
+class a extends b {}
+class c implements d {}
+
+abstract a();
+default b();
+final c();
+native d();
+static e();
+synchronized f();
+void g();
+transient int h;
+volatile int i;
+strictfp class j {};
+
+new a();
+
+import a.b;
+package c;
+
+private a();
+protected b();
+public c();
+
+switch(){};
+case a: b();
+default c() {};
+
+break;
+continue;
+
+do {};
+for() {};
+while() {};
+
+if(){};
+else {};
+
+try {};
+catch {};
+finally {};
+throw new a();
+
+return;
+
+super; super();
+this; this();
+
+goto a;   // (Unused)
+const b;  // (Unused)
+```
+
+#### Operator Precedence
+
+```java
+a[b]
+c.d
+(e)
+
+a++
+b--
+
+++a
+--b
++c
+-d
+!e
+~f
+
+(a)b
+new c()
+
+a * b
+c / d
+e % f
+
+a + b
+c - d
+
+a >> b
+c << d
+e >>> f
+
+a < b
+c <= d
+e > f
+g >= h
+i instanceof j
+
+a == b
+c != d
+
+a & b
+
+a ^ b
+
+a | b
+
+a && b
+
+a || b
+
+a ? b : c
+
+a = b
+c += d
+e -= f
+g *= h
+i /= j
+k %= l
+m &= n
+o ^= p
+q |= r
+s <<= t
+u >>= v
+w >>>= x
 ```

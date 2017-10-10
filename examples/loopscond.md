@@ -50,4 +50,7 @@ if(false || doStuff()){}   // 1
 if(true  || doStuff()){}   // (Nothing)
 if(false && doStuff()){}   // (Nothing)
 if(true  && doStuff()){}   // 1
+
+if(true  | doStuff()){}    // 1
+if(false & doStuff()){}    // 1
 ```
