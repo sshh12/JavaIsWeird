@@ -10,6 +10,8 @@ A collection of trivial java stuff.
 
 * [Strings](https://github.com/sshh12/JavaIsWierd/blob/master/examples/strings.md)
 
+* [String Formatting](https://github.com/sshh12/JavaIsWierd/blob/master/examples/printf.md)
+
 * [Errors](https://github.com/sshh12/JavaIsWierd/blob/master/examples/errors.md)
 
 * [Lists and Arrays](https://github.com/sshh12/JavaIsWierd/blob/master/examples/listsarrays.md)
