@@ -22,7 +22,51 @@ class B extends A {
 new B(); // 12
 ```
 
-#### Instance Vars
+#### Accessing Instance Vars
+
+```java
+class A {
+
+  private   int x = 1;
+  protected int y = 2;
+  public    int z = 3;
+
+  A(){ }
+
+}
+
+class B extends A {
+
+  B(){ }
+  
+  void set(){ x = 99; }          // (Compile Error)
+  
+  void set2(){ super.x = 99; }   // (Valid)
+  
+  void set3(){  
+	y = 99; z = 99;              // (Valid)
+  }
+  
+  void set4(){ 
+    super.y = 99; super.z = 99;  // (Valid)
+  }
+
+}
+```
+
+```java
+B test = new B();
+test.x;            // (Compile Error, private)
+test.y;            // 2
+test.z             // 3
+
+test.set();
+test.set2();
+test.set3();
+test.set4();
+```
+
+#### Changing Instance Vars
 
 ```java
 class A {
