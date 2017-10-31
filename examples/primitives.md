@@ -138,3 +138,17 @@ int c = 3;
 c += c += 1;
 c;            // 7
 ```
+
+#### Math
+
+````java
+Math.ceil(-1.5);      // -1.0 (double)
+Math.floor(-3.14);    // -4.0 (double)
+
+Math.round(1.5);      // 2 (double -> long)
+Math.round(1.5f);     // 2 (float -> int)
+
+Math.round(-1.4999);  // -1
+Math.round(-1.5000);  // -1
+Math.round(-1.5001);  // -2
+````

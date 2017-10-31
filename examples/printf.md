@@ -50,3 +50,11 @@ System.out.printf("%.2f", 22.8);     // 22.80
 System.out.printf("%3s", "1234567890");   // 1234567890
 System.out.printf("%2.2f", 12345.67890);  // 12345.68
 ```
+
+#### Padding
+
+```java
+System.out.printf("==%s==",   "abc");  // ==abc==
+System.out.printf("==%8s==",  "abc");  // ==     abc==
+System.out.printf("==%-8s==", "abc");  // ==abc     ==
+```
