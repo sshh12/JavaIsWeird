@@ -24,6 +24,9 @@
 %x    // (Hex/base16)
 %o    // (Octal/base8)
 
+%b    // (Boolean ex. null -> false)
+%B    // (Boolean made uppercase ex. 1 -> TRUE)
+
 %c    // (Character)
 %C    // (Character made uppercase)
 %s    // (String)
@@ -57,4 +60,16 @@ System.out.printf("%2.2f", 12345.67890);  // 12345.68
 System.out.printf("==%s==",   "abc");  // ==abc==
 System.out.printf("==%8s==",  "abc");  // ==     abc==
 System.out.printf("==%-8s==", "abc");  // ==abc     ==
+```
+
+#### Boolean Converter
+
+```java
+System.out.printf("%b", true);   // true
+System.out.printf("%b", 0);      // true
+System.out.printf("%b", "");     // true
+System.out.printf("%b", "abc");  // true
+
+System.out.printf("%b", null);   // false
+System.out.printf("%b", false);  // false
 ```
