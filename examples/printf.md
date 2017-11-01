@@ -70,6 +70,8 @@ System.out.printf("%b", 0);      // true
 System.out.printf("%b", "");     // true
 System.out.printf("%b", "abc");  // true
 
-System.out.printf("%b", null);   // false
-System.out.printf("%b", false);  // false
+System.out.printf("%b", false);           // false
+System.out.printf("%b", null);            // false
+System.out.printf("%b", new int[5]);      // false (Empty array is falsy)
+System.out.printf("%b", new HashSet<>()); // false (Empty collection is falsy)
 ```
