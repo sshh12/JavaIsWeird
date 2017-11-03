@@ -35,6 +35,14 @@ int d = (int)(double)(int) + 1.5;     // 1
 1 + "2" == "1" + 2;  // true
 ```
 
+#### Return
+
+```java
+return;       // (Valid)
+return(0);    // (Valid)
+return(null); // (Valid)
+``` 
+
 #### Keywords
 
 ```java
