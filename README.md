@@ -14,7 +14,7 @@ A collection of trivial java stuff.
 
 * [Errors](https://github.com/sshh12/JavaIsWierd/blob/master/examples/errors.md)
 
-* [Lists and Arrays](https://github.com/sshh12/JavaIsWierd/blob/master/examples/listsarrays.md)
+* [Lists, Arrays, and Collections](https://github.com/sshh12/JavaIsWierd/blob/master/examples/listsarrays.md)
 
 * [Loops and Conditionals](https://github.com/sshh12/JavaIsWierd/blob/master/examples/loopscond.md)
 

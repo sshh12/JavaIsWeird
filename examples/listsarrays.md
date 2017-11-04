@@ -1,6 +1,6 @@
 # Java is weird.
 
-## Lists and Arrays
+## Lists, Arrays, and Collections
 
 #### asList
 
@@ -38,4 +38,44 @@ list.remove(new Integer(10)) // False
 int[][] a = {{}}; // [[]] (Valid)
 int[] b[] = {{}}; // [[]] (Valid)
 int c[][] = {{}}; // [[]] (Valid)
+```
+
+#### Collection Methods
+
+```java
+Set<Integer> a = new HashSet<>();
+a.add(1); a.add(2); a.add(3);
+        
+Set<Integer> b = new HashSet<>();
+b.add(3); b.add(4); b.add(5);
+```
+
+```java
+// Examples are not chained
+a.retainAll(b);
+a;               // [3]
+
+a.removeAll(b);
+a;               // [1, 2]
+
+a.addAll(b);
+a;               // [1, 2, 3, 4, 5] (only one `3` b/c set)
+```
+
+#### Recursive Collection
+
+```java
+List<Object> items = new ArrayList<>();
+        
+items.add(1);
+items.add("abc");
+items.add(new ArrayList<>());
+items.add(items);
+
+System.out.println(items);         // [1, abc, [], (this Collection)]
+System.out.println(items.get(3));  // [1, abc, [], (this Collection)]
+
+((List)items.get(3)).add(3.14);
+
+System.out.println(items);         // [1, abc, [], (this Collection), 3.14]
 ```
