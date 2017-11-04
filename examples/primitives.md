@@ -34,7 +34,7 @@ int    c = 1; c <<= 2; // 4
 short  d = 1; d <<= 2; // 4
 byte   e = 1; e <<= 2; // 4
 
-int  f = 5; f <<= 32;   // 5
+int  f = 5; f <<= 32;   // 5 (actually x << (32 % INT_SIZE))
 int  g = 5; g <<= 64;   // 5
 byte h = 5; h <<= 8;    // 0
 byte i = 5; i <<= 32;   // 5
@@ -135,15 +135,15 @@ int b = 3;
 b;            // 4
 
 int c = 3;
-c += c += 1;
+c += c += 1;  // (left hand value preserved during evaluation)
 c;            // 7
 ```
 
 #### Math
 
 ````java
-Math.ceil(-1.5);      // -1.0 (double)
-Math.floor(-3.14);    // -4.0 (double)
+Math.ceil(-1.5);      // -1.0 (returns double)
+Math.floor(-3.14);    // -4.0 (returns double)
 
 Math.round(1.5);      // 2 (double -> long)
 Math.round(1.5f);     // 2 (float -> int)
@@ -151,4 +151,28 @@ Math.round(1.5f);     // 2 (float -> int)
 Math.round(-1.4999);  // -1
 Math.round(-1.5000);  // -1
 Math.round(-1.5001);  // -2
+
+Math.rint(1.2);       // 1.0 (like round but returns double)
+Math.rint(1.8);       // 2.0
+Math.rint(1.5);       // 2.0
+Math.rint(2.5);       // 2.0 (rint will round .5 to nearest even integer)
 ````
+
+#### Valid Arithmetic
+
+```java
+Character a = 'a';
+a++;               // (Valid)
+a += 1;            // (Compile Error, incompatible types)
+a += 'z';          // (Compile Error, incompatible types)
+
+char b = 'a';
+b++;               // (Valid)
+b += 1;            // (Valid)
+b += 'z';          // (Valid)
+
+Double c = 3.14;
+c++;               // (Valid)
+c += 1;            // (Valid)
+c += 2.2;          // (Valid)
+```
