@@ -11,6 +11,7 @@ String a = "abc";
 String b = "abc";
 String c = new String("abc");
 String d = new String("abc");
+
 a == b;                       // true
 a == c;                       // false
 c == d;                       // false
@@ -28,6 +29,9 @@ a == b;                       // false
 String e = "abc" + ".";
 String f = "abc.";
 e == f;                       // true
+
+String g = a.substring(0);
+g == a;                       // true (substring(0) -> this)
 ```
 
 #### Compare similar strings
