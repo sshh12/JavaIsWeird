@@ -30,6 +30,13 @@ list.remove(new Integer(1)); // true, [3]
 
 list.remove(10);             // (IndexOutOfBoundsException)
 list.remove(new Integer(10)) // False
+
+LinkedList<Integer> items = new LinkedList<>();
+items.add(1); items.add(2); items.add(3);
+
+items.remove();              // 1 (LinkedList only)
+items.removeFirst();         // 2 (LinkedList only)
+items.removeLast();          // 3 (LinkedList only)
 ```
 
 #### Declaration
