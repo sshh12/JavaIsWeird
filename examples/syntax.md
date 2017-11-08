@@ -5,17 +5,23 @@
 #### Variable names
 
 ```java
-int _ = 1;        // 1
-int $ = 2;        // 2
-int £ = 3;        // 3
-int € = 4;        // 4
-int - = 5;        // (Compile Error)
-int # = 6;        // (Compile Error)
-int @ = 7;        // (Compile Error)
-int * = 8;        // (Compile Error)
-int 1 = 9;        // (Compile Error)
-int finally = 10; // (Compile Error)
-```
+int _ = 1;            // 1
+int $ = 2;            // 2
+int £ = 3;            // 3
+int € = 4;            // 4
+int - = 5;            // (Compile Error)
+int # = 6;            // (Compile Error)
+int @ = 7;            // (Compile Error)
+int * = 8;            // (Compile Error)
+int 1 = 9;            // (Compile Error)
+int finally = 10;     // (Compile Error)
+
+String String = "a";  // (Valid)
+int Integer = 1;      // (Valid)
+Math Math = null;     // (Valid)
+Double Double = 3.14; // (Valid)
+Double double = 3.14; // (Compile Error)
+``` 
 
 #### Chain casting
 
@@ -24,15 +30,6 @@ int a = (byte) + (short) - (int) + 1; // -1
 int b = (byte)(short)(int) + 1;       // 1
 int c = (byte)(short)(int) * 1;       // (Compile Error)
 int d = (int)(double)(int) + 1.5;     // 1
-```
-
-#### Combining
-
-```java
-1 + 2 + "3" + 4 + 5; // 3345
-
-1 + "2" == "3" + 4;  // false
-1 + "2" == "1" + 2;  // true
 ```
 
 #### Return

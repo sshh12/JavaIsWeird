@@ -41,6 +41,15 @@ g == a;                       // true (substring(0) -> this)
 "abc".compareTo("abcdefg"); // -4
 ```
 
+#### Combining
+
+```java
+1 + 2 + "3" + 4 + 5; // 3345
+
+1 + "2" == "3" + 4;  // false
+1 + "2" == "1" + 2;  // true
+```
+
 #### Substring
 
 ```java
