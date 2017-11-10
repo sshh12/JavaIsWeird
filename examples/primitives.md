@@ -15,14 +15,22 @@ byte   e = 1; e /= 0; // (ArithmeticException)
 #### Casting
 
 ```java
-byte a = Byte.MAX_VALUE;   // 127
-a + 3;                     // 130
+byte a = Byte.MAX_VALUE;       // 127
+a + 3;                         // 130
 
-int b = Integer.MAX_VALUE; // 2147483647
-b + 1.;                    // 2.147483648E9
+int b = Integer.MAX_VALUE;     // 2147483647
+b + 1.;                        // 2.147483648E9
 
-int c = 1.5;               // (Compile Error)
-int d = 0; d += 1.5;       // 1
+int c = 1.5;                   // (Compile Error)
+int d = 0; d += 1.5;           // 1
+
+byte e = 127;                  // 127
+byte f = 128;                  // (Compile Error, lossy)
+byte g = 'z';                  // 122 (ascii of z)
+byte h = 'Ç';                  // (Compile Error, lossy)
+
+short i = Short.MAX_VALUE - 1; // (Valid)
+short j = Short.MAX_VALUE + 1; // (Compile Error, lossy)
 ```
 
 #### Shifting
@@ -80,7 +88,6 @@ a == b; // true
 ```java
 5 == 5;                           // true
 new Integer(5) == 5;              // true
-new Integer(5) == new Integer(5); // false
 
 Integer a = 5;
 Integer b = 5;
@@ -119,8 +126,12 @@ int c = 08;     // (Compile Error)
 int d =  x10;   // (Compile Error)
 int e = 0x10;   // 16
 
-int    f = 1e2; // (Compile Error)
-double g = 1e2; // 100.0
+int f = 0b1111; // 15
+int g = 0b10;   // 2
+int h = 0b12;   // (Compile Error)
+
+int    i = 1e2; // (Compile Error)
+double j = 1e2; // 100.0
 ```
 
 #### Increment/Decrement

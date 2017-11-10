@@ -1,6 +1,6 @@
 # Java is weird.
 
-## Lists, Arrays, and Collections
+## Arrays and Collections
 
 #### asList
 

@@ -17,6 +17,8 @@ int 1 = 9;            // (Compile Error)
 int finally = 10;     // (Compile Error)
 
 String String = "a";  // (Valid)
+String.valueOf(1);    // (Compile Error, `String` is now var)
+
 int Integer = 1;      // (Valid)
 Math Math = null;     // (Valid)
 Double Double = 3.14; // (Valid)
