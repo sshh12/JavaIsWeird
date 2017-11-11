@@ -2,6 +2,33 @@
 
 ## Arrays and Collections
 
+#### Abstractions
+
+```
+                                        <Collection>
+
+              +------------------------------------------------------------+
+              +                                     +                      +
+
+            <Set>                                <List>                 <Queue>
+
+    +------------------+                 +---------------------+    +------------+
+    +                  +                 +          +          +    +            +
+
+  HashSet         <SortedSet>       ArrayList     Vector     LinkedList    PriorityQueue
+
+    +                  +
+    +                  +
+
+LinkedHashSet    <NavigableSet>
+
+                       +
+                       +
+
+                    TreeSet
+
+```
+
 #### asList
 
 ```java
@@ -85,4 +112,21 @@ System.out.println(items.get(3));  // [1, abc, [], (this Collection)]
 ((List)items.get(3)).add(3.14);
 
 System.out.println(items);         // [1, abc, [], (this Collection), 3.14]
+```
+
+#### Constructors
+
+```java
+Collection data = new ArrayList<>();
+
+new Stack<Integer>();          // (Valid)
+new Stack<Integer>(data);      // (Compile Error)
+
+new ArrayList<Integer>();      // (Valid)
+new LinkedList<Integer>();     // (Valid)
+new ArrayList<Integer>(data);  // (Valid)
+new LinkedList<Integer>(data); // (Valid)
+
+new HashSet<Integer>();        // (Valid)
+new HashSet<Integer>(data);    // (Valid)
 ```
