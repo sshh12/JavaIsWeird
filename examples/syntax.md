@@ -42,6 +42,28 @@ return(0);    // (Valid)
 return(null); // (Valid)
 ``` 
 
+#### Varargs
+
+```java
+void A(String... args){
+	System.out.println(Arrays.toString(args));
+}
+
+void B(String... args, String x){              // (Compile Error)
+	System.out.println(Arrays.toString(args));
+}
+
+void C(String x, String... args){
+	System.out.println(Arrays.toString(args));
+}
+```
+
+```java
+A("i", "j", "k"); // [i, j, k]
+
+C("i", "j", "k"); // [j, k]
+```
+
 #### Keywords
 
 ```java
