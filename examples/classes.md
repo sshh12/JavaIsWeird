@@ -99,3 +99,33 @@ text.x;                   // 2
 A test2 = text;
 test2.x;                  // 3
 ```
+
+#### Blocks
+
+```java
+class Blocker {
+
+	static {
+		System.out.print('A');
+	}
+	
+	{
+		System.out.print('B');
+	}
+	
+	{
+		System.out.print('C');
+	}
+	
+	Blocker(){
+		System.out.print('D');
+	}
+
+}
+```
+
+```java
+new Blocker();  // ABCD
+new Blocker();  // BCD
+new Blocker();  // BCD
+```
