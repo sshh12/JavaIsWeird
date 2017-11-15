@@ -198,3 +198,12 @@ s <<= t
 u >>= v
 w >>>= x
 ```
+
+```java
+// For the lulz
+int x = 3;
+System.out.println(~-+-~x+++-1);
+
+System.out.println(5 +- 5); // 0
+System.out.println(5 -+ 5); // 0
+```

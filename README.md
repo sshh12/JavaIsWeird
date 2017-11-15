@@ -25,3 +25,5 @@ A collection of trivial java stuff.
 * [Regex](https://github.com/sshh12/JavaIsWierd/blob/master/examples/regex.md)
 
 * [Statics](https://github.com/sshh12/JavaIsWierd/blob/master/examples/statics.md)
+
+* [java.lang](https://github.com/sshh12/JavaIsWierd/blob/master/examples/langapi.md)

@@ -16,10 +16,29 @@ class B extends A {
   B(){ System.out.println('2'); }
 
 }
+
+class C {
+
+  C(int x){ System.out.println('3'); }
+
+}
+
+class D extends C {                 // (Compile Error, no default constructor)
+
+  D(){ System.out.println('4'); }
+
+}
+
+class E extends C {                 // (Valid, manually calls constructor)
+
+  E(){ super(0); System.out.println('5'); }
+
+}
 ```
 
 ```java
 new B(); // 12
+new E(); // 35
 ```
 
 #### Accessing Instance Vars
