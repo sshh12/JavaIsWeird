@@ -119,19 +119,24 @@ Object  f = true ?    c : d;  // (NullPointerException)
 #### Literals
 
 ```java
-int a = 05;     // 5
-int b = 010;    // 8
-int c = 08;     // (Compile Error)
+int a = 05;        // 5
+int b = 010;       // 8
+int c = 08;        // (Compile Error)
 
-int d =  x10;   // (Compile Error)
-int e = 0x10;   // 16
+int d =  x10;      // (Compile Error)
+int e = 0x10;      // 16
 
-int f = 0b1111; // 15
-int g = 0b10;   // 2
-int h = 0b12;   // (Compile Error)
+int f = 0b1111;    // 15
+int g = 0b10;      // 2
+int h = 0b12;      // (Compile Error)
 
-int    i = 1e2; // (Compile Error)
-double j = 1e2; // 100.0
+int    i = 1e2;    // (Compile Error)
+double j = 1e2;    // 100.0
+
+int k = 1_22_3;    // 1223
+int l = 1_22_;     // (Compile Error)
+int m = _22_3;     // (Compile Error)
+double n = 3.1_4;  // 3.14
 ```
 
 #### Increment/Decrement
