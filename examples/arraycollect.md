@@ -112,6 +112,11 @@ System.out.println(items.get(3));  // [1, abc, [], (this Collection)]
 ((List)items.get(3)).add(3.14);
 
 System.out.println(items);         // [1, abc, [], (this Collection), 3.14]
+
+List<Object> stuff = new ArrayList<>();
+stuff.add(items); items.add(stuff);
+
+System.out.println(items);         // (Runtime Error, StackOverflowError)
 ```
 
 #### Constructors

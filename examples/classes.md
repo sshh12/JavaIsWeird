@@ -119,6 +119,16 @@ A test2 = text;
 test2.x;                  // 3
 ```
 
+#### Interface Vars
+
+```java
+interface Dog {
+    int a;               // (Compile Error, expects '=')
+    int b = 1;           // (Valid, made public static final)
+	private int c = 2;   // (Compile Error, not allowed - only public)
+}
+```
+
 #### Blocks
 
 ```java
