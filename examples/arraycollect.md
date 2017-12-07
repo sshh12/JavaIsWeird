@@ -44,6 +44,28 @@ b.set(1, 6);
 a[1];                                 // 6
 ```
 
+#### toArray
+
+```java
+List<String> items = new ArrayList<>();
+items.add("a"); items.add("b"); items.add("c");
+        
+String[] a1 = new String[]{};
+String[] a2 = items.toArray(a);
+a1;                                 // []
+a2;                                 // [a, b, c]
+
+String[] b1 = new String[]{"1", "2", "3"};
+String[] b2 = items.toArray(a);
+b1;                                 // [a, b, c]
+b2;                                 // [a, b, c]
+
+String[] c1 = new String[]{"1", "2", "3", "4", "5"};
+String[] c2 = items.toArray(a);
+c1;                                 // [a, b, c, null, 5]
+c2;                                 // [a, b, c, null, 5]
+```
+
 #### Remove
 
 ```java

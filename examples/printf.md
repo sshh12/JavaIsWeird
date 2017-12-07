@@ -75,3 +75,15 @@ System.out.printf("%b", null);            // false
 System.out.printf("%b", new int[5]);      // false (Empty array is falsy)
 System.out.printf("%b", new HashSet<>()); // false (Empty collection is falsy)
 ```
+
+#### Valid Primitives
+
+```java
+System.out.printf("%d", 1);      // 1
+System.out.printf("%d", 1.5);    // (Runtime Error, IllegalFormatConversionException)
+System.out.printf("%d", 'a');    // (Runtime Error, IllegalFormatConversionException)
+System.out.printf("%d", 32L);    // 32
+
+System.out.printf("%f", 1.6f);   // 1.600000
+System.out.printf("%f", 10);     // (Runtime Error, IllegalFormatConversionException)
+```
