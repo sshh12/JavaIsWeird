@@ -5,6 +5,7 @@
 #### Constructor
 
 ```java
+new BigInteger(8);                // (Compiler Error, private)
 new BigInteger("8");              // 8
 new BigInteger("11", 16);         // 17
 new BigInteger(new byte[]{0, 1}); // 1
@@ -35,4 +36,17 @@ b.isProbablePrime(100);             // true
 BigInteger c = new BigInteger("4");
 c.isProbablePrime(0);               // true
 c.isProbablePrime(100);             // false
+```
+
+#### Doing Math
+
+```java
+BigInteger a = BigInteger.ONE;
+BigInteger b = BigInteger.TEN;
+
+System.out.println(a + b);     // (Compile Error, cannot add objects)
+
+a.add(b);                      // 11 (a and b not changed)
+a;                             // 1
+b;                             // 10
 ```
