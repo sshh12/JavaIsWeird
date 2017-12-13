@@ -137,6 +137,10 @@ int k = 1_22_3;    // 1223
 int l = 1_22_;     // (Compile Error)
 int m = _22_3;     // (Compile Error)
 double n = 3.1_4;  // 3.14
+int o = 0_10;      // 8
+int p = 0b_10;     // (Compile Error)
+long q = 1_0L;     // 10
+long r = 10_L;     // (Compile Error)
 ```
 
 #### Increment/Decrement
