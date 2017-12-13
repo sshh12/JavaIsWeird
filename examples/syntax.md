@@ -64,6 +64,23 @@ A("i", "j", "k"); // [i, j, k]
 C("i", "j", "k"); // [j, k]
 ```
 
+#### Methods
+
+```java
+// (Valid)
+void func() { }
+static void func() { }
+public static void func() { }
+static public void func() { }
+
+// (Compile Error)
+func() { }
+static func() { }
+public void static func() { }
+void public static func() { }
+static void public func() { }
+```
+
 #### Keywords
 
 ```java
