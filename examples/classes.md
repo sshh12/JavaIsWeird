@@ -57,17 +57,17 @@ class A {
 class B extends A {
 
   B(){ }
-  
-  void set(){ x = 99; }          // (Compile Error)
-  
-  void set2(){ super.x = 99; }   // (Valid)
-  
-  void set3(){  
-	y = 99; z = 99;              // (Valid)
+
+  void set() { x = 99; }          // (Compile Error)
+
+  void set2() { super.x = 99; }   // (Valid)
+
+  void set3() {  
+	   y = 99; z = 99;              // (Valid)
   }
-  
-  void set4(){ 
-    super.y = 99; super.z = 99;  // (Valid)
+
+  void set4() {
+    super.y = 99; super.z = 99;   // (Valid)
   }
 
 }
@@ -78,11 +78,6 @@ B test = new B();
 test.x;            // (Compile Error, private)
 test.y;            // 2
 test.z             // 3
-
-test.set();
-test.set2();
-test.set3();
-test.set4();
 ```
 
 #### Changing Instance Vars
@@ -92,7 +87,7 @@ class A {
 
   int x = 1;
 
-  A(){ }
+  A() { }
 
 }
 
@@ -100,7 +95,7 @@ class B extends A {
 
   int x = 2;
 
-  B(){ }
+  B() { }
 
 }
 ```
@@ -123,9 +118,9 @@ test2.x;                  // 3
 
 ```java
 interface Dog {
-    int a;               // (Compile Error, expects '=')
-    int b = 1;           // (Valid, made public static final)
-	private int c = 2;   // (Compile Error, not allowed - only public)
+  int a;               // (Compile Error, expects '=')
+  int b = 1;           // (Valid, made public static final)
+  private int c = 2;   // (Compile Error, not allowed - only public)
 }
 ```
 
@@ -137,15 +132,15 @@ class Blocker {
 	static {
 		System.out.print('A');
 	}
-	
+
 	{
 		System.out.print('B');
 	}
-	
+
 	{
 		System.out.print('C');
 	}
-	
+
 	Blocker(){
 		System.out.print('D');
 	}
