@@ -81,6 +81,16 @@ void public static func() { }
 static void public func() { }
 ```
 
+#### Diamond Operator
+
+```java
+ArrayList<Object> a;
+a = new ArrayList<Object>(); // (Valid)
+a = new ArrayList<>();       // (Valid)
+a = new ArrayList<String>(); // (Compile Error, incompatible types)
+a = new ArrayList<E>();      // (Compile Error, incompatible types)
+```
+
 #### Keywords
 
 ```java
