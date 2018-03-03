@@ -12,6 +12,18 @@ short  d = 1; d /= 0; // (ArithmeticException)
 byte   e = 1; e /= 0; // (ArithmeticException)
 ```
 
+#### Mod
+
+```java
+int a =  0 % 10;  // 0
+int b = 10 % 0;   // 0 (ArithmeticException)
+int c = 10 % 10;  // 0
+int d = -1 % 10;  // -1
+int e =  1 % -10; // 1
+int f = -1 % -10; // -1
+int g = -1 % -10; // -1
+```
+
 #### Casting
 
 ```java
