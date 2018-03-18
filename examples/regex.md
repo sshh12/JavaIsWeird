@@ -24,3 +24,14 @@
 "a-b--c".replaceAll("[a-z]", "~$0~");                   // ~a~-~b~--~c~
 "...123..890.".replaceAll("(\\d)(\\d)(\\d)", "$3$2$1"); // ...321..098.
 ```
+
+#### Matching
+
+```java
+"01234".matches("\\d+"); // true
+"0123a".matches("\\d+"); // false
+
+"Az_0".matches("\\w+");  // true
+
+"Ç".matches("\\w");      // false
+```
