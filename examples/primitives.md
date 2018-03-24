@@ -153,6 +153,9 @@ int o = 0_10;      // 8
 int p = 0b_10;     // (Compile Error)
 long q = 1_0L;     // 10
 long r = 10_L;     // (Compile Error)
+
+double s = 1.0d;   // 1.0
+double t = 1d;     // 1.0
 ```
 
 #### Increment/Decrement
